@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tbillon <tbillon@student.42lyon.fr>        +#+  +:+       +#+         #
+#    By: tanguy <tanguy@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/11/23 14:29:24 by tbillon           #+#    #+#              #
-#    Updated: 2020/11/28 14:02:00 by tbillon          ###   ########lyon.fr    #
+#    Updated: 2021/07/23 09:15:48 by tanguy           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,6 +42,9 @@ bonus:		$(OBJS) $(OBJSBONUS)
 			ar rcs $(NAME) $(OBJS) $(OBJSBONUS)
 
 all:		$(NAME)
+
+norme:		
+			@norminette *.c
 
 clean:
 			$(RM) $(OBJS) $(OBJSBONUS)
